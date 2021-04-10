@@ -1,10 +1,15 @@
 # FAQ
 
-## How to set up updatet manager from moonraker
+## How to set up update manager from moonraker
 
 add this
 
 ```
+[update_manager]
+enable_repo_debug: False
+enable_auto_refresh: False
+distro: debian
+
 [update_manager client moonraker-telegram]
 type: git_repo
 path: /home/pi/moonraker-telegram
@@ -16,7 +21,7 @@ install_script: scripts/install.sh
 
 too your moonraker config
 
-## Update_Mangager shows drity or false
+## Update_Manager shows drity or false
 
 if the update manager shows an error you have to do the following
 
